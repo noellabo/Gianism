@@ -402,7 +402,7 @@ EOS;
 					$redirect_to .= ( false !== strpos( $redirect_to, '?' ) ) ? '&' : '?';
 					$counter = 0;
 					foreach ( $args as $key => $val ) {
-						if ( 0 == $counter ) {
+						if ( 0 != $counter ) {
 							$redirect_to .= '&';
 						}
 						$redirect_to .= $key . '=' . rawurlencode( $val );
